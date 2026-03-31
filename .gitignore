@@ -1,0 +1,4 @@
+# Ignore secrets and env files
+secrets.json
+.env
+.venv/

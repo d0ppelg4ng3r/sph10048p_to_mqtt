@@ -1,0 +1,276 @@
+{
+  "device_id": "SPH10048P",
+  "mf": "SunGoldPower",
+  "mdl": "SPH10048P",
+  "sn": "SPH10048P-12345678",
+  "hw": "x.x",
+  "sw": "x.x",
+  "name": "SPH10048P Inverter",
+  "registers": [
+    {
+      "address": "100",
+      "length": 1,
+      "desc": "battsoc",
+      "type": "uint16",
+      "unit": "%",
+      "ha_name": "Battery SOC",
+      "ha_device_class": "battery",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "101",
+      "length": 1,
+      "desc": "battvolt",
+      "type": "uint16",
+      "unit": "V",
+      "ha_name": "Battery Voltage",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "102",
+      "length": 1,
+      "desc": "battchargecurr",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Battery Charge Current",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "103",
+      "length": 1,
+      "desc": "batttemp",
+      "type": "int16",
+      "unit": "°C",
+      "ha_name": "Battery Temperature",
+      "ha_device_class": "temperature",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "107",
+      "length": 1,
+      "desc": "pv1volt",
+      "type": "int16",
+      "unit": "V",
+      "ha_name": "PV Array 1 Voltage",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "108",
+      "length": 1,
+      "desc": "pv1curr",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "PV Array 1 Current",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "109",
+      "length": 1,
+      "desc": "pv1chargepwr",
+      "type": "int16",
+      "unit": "W",
+      "ha_name": "PV Array 1 Charge Power",
+      "ha_device_class": "power",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "10A",
+      "length": 1,
+      "desc": "pvtotpwr",
+      "type": "int16",
+      "unit": "W",
+      "ha_name": "PV Arrays Total Power",
+      "ha_device_class": "power",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "10E",
+      "length": 1,
+      "desc": "batttotchgpwr",
+      "type": "int16",
+      "unit": "W",
+      "ha_name": "Battery Total Charge Power",
+      "ha_device_class": "power",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "10F",
+      "length": 1,
+      "desc": "pv2volt",
+      "type": "int16",
+      "unit": "V",
+      "ha_name": "PV Array 2 Voltage",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "110",
+      "length": 1,
+      "desc": "pv2curr",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "PV Array 2 Current",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "111",
+      "length": 1,
+      "desc": "pv2chargepwr",
+      "type": "int16",
+      "unit": "W",
+      "ha_name": "PV Array 2 Charge Power",
+      "ha_device_class": "power",
+      "ha_state_class": "measurement",
+      "memory_area": "p01"
+    },
+    {
+      "address": "213",
+      "length": 1,
+      "desc": "gridvolta",
+      "type": "int16",
+      "unit": "V",
+      "ha_name": "Grid Voltage P1",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "214",
+      "length": 1,
+      "desc": "gridcurra",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Grid Current P1",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "215",
+      "length": 1,
+      "desc": "gridfreq",
+      "type": "int16",
+      "unit": "Hz",
+      "ha_name": "Grid Frequency",
+      "ha_device_class": "frequency",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "216",
+      "length": 1,
+      "desc": "invvolta",
+      "type": "int16",
+      "unit": "V",
+      "ha_name": "Inverter Voltage P1",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "217",
+      "length": 1,
+      "desc": "invcurra",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Inverter Current P1",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "218",
+      "length": 1,
+      "desc": "invfreq",
+      "type": "int16",
+      "unit": "Hz",
+      "ha_name": "Inverter Frequency",
+      "ha_device_class": "frequency",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "219",
+      "length": 1,
+      "desc": "loadcurra",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Load Current P1",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "21E",
+      "length": 1,
+      "desc": "linechargecurr",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Line Charge Current",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "22C",
+      "length": 1,
+      "desc": "invvoltb",
+      "type": "int16",
+      "unit": "V",
+      "ha_name": "Inverter Voltage P2",
+      "ha_device_class": "voltage",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "22E",
+      "length": 1,
+      "desc": "invcurrb",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Inverter Current P2",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "230",
+      "length": 1,
+      "desc": "loadcurrb",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Load Current P2",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    },
+    {
+      "address": "238",
+      "length": 1,
+      "desc": "gridcurrb",
+      "type": "int16",
+      "unit": "A",
+      "ha_name": "Grid Current P2",
+      "ha_device_class": "current",
+      "ha_state_class": "measurement",
+      "memory_area": "p02"
+    }
+    
+  ]
+}

@@ -1,0 +1,8 @@
+pymodbus>=3.0.0
+paho-mqtt>=2.0.0
+pyserial>=
+# For loading .env files if you prefer dotenv over secrets.json
+python-dotenv>=1.0.0
+# Optional (only if you need back-compat or extras):
+# typing-extensions>=4.0.0
+# aioconsole>=0.3.0  # useful for interactive asyncio debugging
