@@ -245,7 +245,7 @@
       "type": "int16",
       "unit": "V",
       "ha_name": "Grid Voltage P2",
-      "ha_device_class": "current",
+      "ha_device_class": "voltage",
       "ha_state_class": "measurement",
       "memory_area": "p02"
     },
