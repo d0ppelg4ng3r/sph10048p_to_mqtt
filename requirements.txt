@@ -1,6 +1,6 @@
 pymodbus>=3.0.0
 paho-mqtt>=2.0.0
-pyserial>=
+pyserial>=3.5
 # For loading .env files if you prefer dotenv over secrets.json
 python-dotenv>=1.0.0
 # Optional (only if you need back-compat or extras):

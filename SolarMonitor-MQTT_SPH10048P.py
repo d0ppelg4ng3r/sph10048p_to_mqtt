@@ -340,12 +340,13 @@ async def addInverterRegisters(modbusResponseList):
                 logger.debug(f"Response Object: {modbusResponse}")
 
             addressCounter = 0
-            for register in modbusResponse.registers:
-                logger.debug(f"Adding register with address {hex(modbusResponse.address+addressCounter)[2:].upper()} and value {register} to InverterRegisters")
-                InverterRegisters[hex(modbusResponse.address+addressCounter)[2:].upper()] = register
-                addressCounter += 1
+            if modbusResponse.registers is not None and len(modbusResponse.registers > 0):
+                for register in modbusResponse.registers:
+                    logger.debug(f"Adding register with address {hex(modbusResponse.address+addressCounter)[2:].upper()} and value {register} to InverterRegisters")
+                    InverterRegisters[hex(modbusResponse.address+addressCounter)[2:].upper()] = register
+                    addressCounter += 1
 
-            responseCounter += 1
+                responseCounter += 1
 
 
 async def getP00():
